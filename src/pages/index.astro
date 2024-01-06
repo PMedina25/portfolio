@@ -1,6 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
+import ExperienceCard from "../components/ExperienceCard.astro";
+
+const description =
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ullamcorper, urna nec posuere malesuada, nunc magna lobortis dui, a dictum nibh erat nec felis. Nunc ultrices lobortis pellentesque. Etiam tempor ornare nunc, id faucibus nulla cursus ac.";
 ---
 
 <Layout title="Welcome to Astro.">
@@ -13,7 +17,7 @@ import Header from "../components/Header.astro";
     </div><div class="relative flex w-full flex-col">
       <Header />
       <main class="flex-auto">
-        <div class="sm:px-8 mt-12">
+        <section class="sm:px-8 mt-12">
           <div class="mx-auto w-full max-w-7xl lg:px-8">
             <div class="mx-auto max-w-2xl lg:max-w-5xl px-4 sm:px-8 lg:px-12">
               <div class="max-w-2xl">
@@ -21,9 +25,10 @@ import Header from "../components/Header.astro";
                   class="text-4xl font-bold tracking-tight text-zinc-100 sm:text-5xl"
                 >
                   Hi, I’m Pablo
-                </h1><p class="mt-6 text-base text-zinc-400">
-                  Software Engineer with more than 3 years of experience.
-                  Specialized in Frontend Development. From Sevilla, Spain.
+                </h1><p class="mt-6 text-base text-zinc-400 leading-7">
+                  Software Engineer with more than 3 years of experience. Full
+                  Stack developer specialized in Frontend. In my free time I
+                  write some code. From Sevilla, Spain.
                 </p><div class="mt-6 flex gap-6">
                   <a
                     class="group -m-1 p-1"
@@ -56,7 +61,39 @@ import Header from "../components/Header.astro";
               </div>
             </div>
           </div>
-        </div>
+        </section>
+        <section id="experience" class="sm:px-8 mt-24 md:mt-28">
+          <div class="mx-auto w-full max-w-7xl lg:px-8">
+            <div
+              class="grid grid-cols-1 gap-y-8 items-baseline md:grid-cols-4 mx-auto max-w-2xl lg:max-w-5xl px-4 sm:px-8 lg:px-12"
+            >
+              <h2
+                class="text-lg font-semibold tracking-tight sm:text-xl text-zinc-100"
+              >
+                Experience
+              </h2>
+              <div class="md:col-span-3">
+                <ul role="list" class="space-y-16">
+                  <li class="flex flex-col items-start">
+                    <ExperienceCard
+                      title="Kairos DS"
+                      role="Frontend Developer"
+                      description={description}
+                      time="2023-Present"
+                    />
+                  </li><li class="flex flex-col items-start">
+                    <ExperienceCard
+                      title="The Cocktail"
+                      role="Frontend Developer"
+                      description={description}
+                      time="2021-2023"
+                    />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
   </div>

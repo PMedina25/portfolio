@@ -1,12 +1,14 @@
 ---
+import { Image } from "astro:assets";
 interface Props {
   title: string;
   role: string;
   description: string;
   time: string;
+  image: string;
 }
 
-const { title, role, description, time } = Astro.props;
+const { title, role, description, time, image } = Astro.props;
 ---
 
 <div
@@ -14,12 +16,7 @@ const { title, role, description, time } = Astro.props;
 >
   <div class="flex flex-col text-zinc-100">
     <div class="flex flex-row gap-2 items-center">
-      <img
-        decoding="async"
-        loading="lazy"
-        src="images/amazon.svg"
-        class="w-5 h-5 rounded-full ring-1 shadow-md shadow-primary-800/5 ring-primary-900"
-      />
+      <Image src={image} alt="Kairos DS logo" width={20} height={20} />
       <h3
         class="text-base font-semibold tracking-tight sm:max-w-none sm:text-lg max-w-[20ch] text-primary-100"
       >

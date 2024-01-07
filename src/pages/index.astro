@@ -3,9 +3,12 @@ import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import ExperienceCard from "../components/ExperienceCard.astro";
 import Footer from "../components/Footer.astro";
+import { Image } from "astro:assets";
 
-const description =
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ullamcorper, urna nec posuere malesuada, nunc magna lobortis dui, a dictum nibh erat nec felis. Nunc ultrices lobortis pellentesque. Etiam tempor ornare nunc, id faucibus nulla cursus ac.";
+const kairosDescription =
+  "As a frontend developer at Kairos DS, I played a key role in developing responsive web applications using Angular and Lit, ensuring optimal user experiences. Collaborating with cross-functional teams, I contributed to the implementation of front-end solutions. Engaging in agile development processes, I consistently delivered high-quality software within sprint timelines.";
+const theCocktailDescription =
+  "In my role as a React Developer at The Cocktail, I took a lead role in crafting dynamic web applications, utilizing my expertise in React. Working collaboratively with cross-functional teams, I actively contributed to the seamless implementation of front-end solutions. My responsibilities encompassed the successful integration of React web applications, ensuring the creation of robust and scalable user interfaces. Embracing agile development practices, I consistently delivered high-quality software within sprint timelines."
 ---
 
 <Layout title="Welcome to Astro.">
@@ -22,8 +25,15 @@ const description =
           <div class="mx-auto w-full max-w-7xl lg:px-8">
             <div class="mx-auto max-w-2xl lg:max-w-5xl px-4 sm:px-8 lg:px-12">
               <div class="max-w-2xl">
+                <Image
+                  src="/pablo-photo.webp"
+                  class="rounded-full"
+                  alt="Pablo's photo"
+                  width={64}
+                  height={64}
+                />
                 <h1
-                  class="text-4xl font-bold tracking-tight text-zinc-100 sm:text-5xl"
+                  class="text-4xl font-bold tracking-tight text-zinc-100 sm:text-5xl mt-6"
                 >
                   Hi, I’m Pablo
                 </h1><p class="mt-6 text-base text-zinc-400 leading-7">
@@ -79,15 +89,17 @@ const description =
                     <ExperienceCard
                       title="Kairos DS"
                       role="Frontend Developer"
-                      description={description}
+                      description={kairosDescription}
                       time="2023-Present"
+                      image="/kairos-logo.svg"
                     />
                   </li><li class="flex flex-col items-start">
                     <ExperienceCard
                       title="The Cocktail"
                       role="Frontend Developer"
-                      description={description}
+                      description={theCocktailDescription}
                       time="2021-2023"
+                      image="/the-cocktail-logo.webp"
                     />
                   </li>
                 </ul>

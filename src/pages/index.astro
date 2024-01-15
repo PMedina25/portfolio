@@ -1,14 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
-import ExperienceCard from "../components/ExperienceCard.astro";
+import ExperienceCard from "../components/cards/ExperienceCard.astro";
 import Footer from "../components/Footer.astro";
 import { Image } from "astro:assets";
-
-const kairosDescription =
-  "As a frontend developer at Kairos DS, I played a key role in developing responsive web applications using Angular and Lit, ensuring optimal user experiences. Collaborating with cross-functional teams, I contributed to the implementation of front-end solutions. Engaging in agile development processes, I consistently delivered high-quality software within sprint timelines.";
-const theCocktailDescription =
-  "In my role as a React Developer at The Cocktail, I took a lead role in crafting dynamic web applications, utilizing my expertise in React. Working collaboratively with cross-functional teams, I actively contributed to the seamless implementation of front-end solutions. My responsibilities encompassed the successful integration of React web applications, ensuring the creation of robust and scalable user interfaces. Embracing agile development practices, I consistently delivered high-quality software within sprint timelines."
+import ProjectNavigation from "../components/ProjectsNavigation.tsx";
+import experience from "../data/experience.json";
 ---
 
 <Layout title="Welcome to Astro.">
@@ -23,7 +20,7 @@ const theCocktailDescription =
       <main class="flex-auto">
         <section class="sm:px-8 mt-12">
           <div class="mx-auto w-full max-w-7xl lg:px-8">
-            <div class="mx-auto max-w-2xl lg:max-w-5xl px-4 sm:px-8 lg:px-12">
+            <div class="mx-auto max-w-2xl lg:max-w-5xl px-4 sm:px-12">
               <div class="max-w-2xl">
                 <Image
                   src="/pablo-photo.webp"
@@ -84,26 +81,36 @@ const theCocktailDescription =
                 Experience
               </h2>
               <div class="md:col-span-3">
-                <ul role="list" class="space-y-16">
-                  <li class="flex flex-col items-start">
-                    <ExperienceCard
-                      title="Kairos DS"
-                      role="Frontend Developer"
-                      description={kairosDescription}
-                      time="2023-Present"
-                      image="/kairos-logo.svg"
-                    />
-                  </li><li class="flex flex-col items-start">
-                    <ExperienceCard
-                      title="The Cocktail"
-                      role="Frontend Developer"
-                      description={theCocktailDescription}
-                      time="2021-2023"
-                      image="/the-cocktail-logo.webp"
-                    />
-                  </li>
+                <ul role="list" class="grid gap-x-4 gap-y-8 grid-cols-fill-16">
+                  {
+                    experience.map(
+                      ({ title, role, description, time, image }) => (
+                        <li class="flex flex-col items-start">
+                          <ExperienceCard
+                            title={title}
+                            role={role}
+                            description={description}
+                            time={time}
+                            image={image}
+                          />
+                        </li>
+                      )
+                    )
+                  }
                 </ul>
               </div>
+            </div>
+          </div>
+        </section>
+        <section id="projects" class="sm:px-8 mt-24 md:mt-28">
+          <div class="mx-auto w-full max-w-7xl lg:px-8">
+            <div class="mx-auto max-w-2xl lg:max-w-5xl px-4 sm:px-8 lg:px-12">
+              <h2
+                class="text-lg font-semibold tracking-tight sm:text-xl text-zinc-100 mb-8"
+              >
+                Projects
+              </h2>
+              <ProjectNavigation client:load />
             </div>
           </div>
         </section>

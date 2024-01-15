@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Kairos DS",
+    "role": "Frontend Developer",
+    "description": "As a frontend developer at Kairos DS, I played a key role in developing responsive web applications using Angular and Lit, ensuring optimal user experiences. Collaborating with cross-functional teams, I contributed to the implementation of front-end solutions. Engaging in agile development processes, I consistently delivered high-quality software within sprint timelines.",
+    "time": "2023-Present",
+    "image": "/kairos-logo.svg"
+  },
+  {
+    "title": "The Cocktail",
+    "role": "Frontend Developer",
+    "description": "In my role as a React Developer at The Cocktail, I took a lead role in crafting dynamic web applications, utilizing my expertise in React. Working collaboratively with cross-functional teams, I actively contributed to the seamless implementation of front-end solutions. My responsibilities encompassed the successful integration of React web applications, ensuring the creation of robust and scalable user interfaces. Embracing agile development practices, I consistently delivered high-quality software within sprint timelines.",
+    "time": "2021-2023",
+    "image": "/the-cocktail-logo.webp"
+  }
+]

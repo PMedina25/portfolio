@@ -13,7 +13,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, client, u
   >
     <article className="p-4 md:p-8">
       <div className="text-right">
-        <span className="text-zinc-400 text-xs">{client}</span>
+        <span className="text-zinc-500 text-xs">{client}</span>
       </div>
       <h3 className="z-20 font-medium duration-1000 text-3xl text-zinc-200 group-hover:text-white">
         {title}

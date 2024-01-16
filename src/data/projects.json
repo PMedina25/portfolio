@@ -1,38 +1,37 @@
 [
   {
     "title": "Darwin",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent posuere, neque at efficitur tincidunt, ligula nunc laoreet est, vel elementum velit elit eu sapien.",
+    "description": "Development of the Unified Sales Funnel which serves as the system through which all sales for this client flow.",
     "client": "Naturgy",
+    "url": "https://checkout.naturgy.es/?sel=42003&vn=907008005&agv=GRWEBCOL&src=hogar&id=es&origen=web&tipo=luz&idCampaign[]=ef50772a-6577-4f5c-8b29-9e4aa46f3d7e",
     "type": "professional"
   },
   {
-    "title": "Sustainability Assessment",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent posuere, neque at efficitur tincidunt, ligula nunc laoreet est, vel elementum velit elit eu sapien.",
+    "title": "Sustainability Tracker",
+    "description": "Web application for calculating the sustainability level of companies, including a dashboard where companies input parameters, and the system generates visualizations indicating their sustainability compared to others in the same country and industry.",
     "client": "HSBC",
+    "url": "https://sustainabilitytracker.business.hsbc.com/en-gb/",
     "type": "professional"
   },
   {
     "title": "Santander Open Academy",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent posuere, neque at efficitur tincidunt, ligula nunc laoreet est, vel elementum velit elit eu sapien.",
+    "description": "Online platform for the management and tracking of scholarships and courses within an organization.",
     "client": "Banco Santander",
+    "url": "https://app.santanderopenacademy.com/es/program/search?resourceType=SOA_GRANT",
     "type": "professional"
   },
   {
     "title": "Financial Fitness",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent posuere, neque at efficitur tincidunt, ligula nunc laoreet est, vel elementum velit elit eu sapien.",
+    "description": "Web application for calculating individuals' financial fitness. The application features a funnel where users, based on their input of expenses, debts, and savings, can gain detailed insights into their financial situation.",
     "client": "HSBC",
+    "url": "https://financialfitness.hsbc.co.uk/",
     "type": "professional"
   },
   {
-    "title": "Excel Processor",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent posuere, neque at efficitur tincidunt, ligula nunc laoreet est, vel elementum velit elit eu sapien.",
-    "client": "SAS",
-    "type": "freelance"
-  },
-  {
     "title": "Portfolio",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent posuere, neque at efficitur tincidunt, ligula nunc laoreet est, vel elementum velit elit eu sapien.",
+    "description": "A creative showcase highlighting my expertise in web development. Featuring a modern design and intuitive interface, it showcases standout projects that reflect my passion for innovation and visually compelling aesthetics.",
     "client": "Personal",
+    "url": "http://localhost:4321/",
     "type": "personal"
   }
 ]

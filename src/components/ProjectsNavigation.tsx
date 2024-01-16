@@ -6,7 +6,6 @@ import ProjectCard from "./cards/ProjectCard.tsx";
 const TAGS = [
   { text: "All", type: ProjectType.All },
   { text: "Professional",type: ProjectType.Professional },
-  { text: "Freelance",type: ProjectType.Freelance },
   { text: "Personal",type: ProjectType.Personal },
 ];
 
@@ -46,6 +45,7 @@ export default function ProjectsNavigation() {
                 title={project.title}
                 description={project.description}
                 client={project.client}
+                url={project.url}
               />
             );
           }

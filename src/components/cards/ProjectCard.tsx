@@ -1,17 +1,19 @@
-type Props = {
+interface ProjectCardProps {
   title: string;
   description: string;
   client: string;
+  url: string;
 };
 
-const ProjectCard: React.FC<Props> = ({ title, description, client }) => (
+const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, client, url }) => (
   <a
-    href="#"
+    href={url}
     className="duration-300 border rounded-xl hover:bg-zinc-800/10 group md:gap-8 hover:border-teal-400 border-zinc-600"
+    target="_blank"
   >
     <article className="p-4 md:p-8">
       <div className="text-right">
-        <span className="text-zinc-500 text-xs">{client}</span>
+        <span className="text-zinc-400 text-xs">{client}</span>
       </div>
       <h3 className="z-20 font-medium duration-1000 text-3xl text-zinc-200 group-hover:text-white">
         {title}

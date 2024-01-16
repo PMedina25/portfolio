@@ -8,7 +8,7 @@ import ProjectNavigation from "../components/ProjectsNavigation.tsx";
 import experience from "../data/experience.json";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Pablo's Portfolio - Software Engineer">
   <div class="flex w-full">
     <div class="fixed inset-0 flex justify-center sm:px-8">
       <div class="flex w-full max-w-7xl lg:px-8">
@@ -25,7 +25,7 @@ import experience from "../data/experience.json";
                 <Image
                   src="/pablo-photo.webp"
                   class="rounded-full"
-                  alt="Pablo's photo"
+                  alt=""
                   width={64}
                   height={64}
                 />
@@ -33,16 +33,17 @@ import experience from "../data/experience.json";
                   class="text-4xl font-bold tracking-tight text-zinc-100 sm:text-5xl mt-6"
                 >
                   Hi, I’m Pablo
-                </h1><p class="mt-6 text-base text-zinc-400 leading-7">
-                  Software Engineer with more than 3 years of experience. Full
-                  Stack developer specialized in Frontend. In my free time I
-                  write some code. From Sevilla, Spain.
+                </h1><p class="mt-6 text-base text-zinc-400 leading-6">
+                  Software Engineer with more than 3 years of experience in
+                  Frontend development at large companies. Specialized in
+                  developing SPAs using Angular and React, as well as Web
+                  Components with Lit. From Sevilla, Spain.
                 </p><div class="mt-6 flex gap-6">
                   <a
                     class="group -m-1 p-1"
-                    aria-label="Follow on LinkedIn"
                     href="https://www.linkedin.com/in/pablo-medina-rodr%C3%ADguez-a3a8b9135/"
-                    ><svg
+                    target="_blank"
+                    ><span class="sr-only">Follow on LinkedIn</span><svg
                       viewBox="0 0 24 24"
                       aria-hidden="true"
                       class="h-6 w-6 transition fill-zinc-400 group-hover:fill-zinc-300"
@@ -52,9 +53,10 @@ import experience from "../data/experience.json";
                     ></a
                   ><a
                     class="group -m-1 p-1"
-                    aria-label="Follow on GitHub"
                     href="https://github.com/PMedina25"
-                    ><svg
+                    target="_blank"
+                  >
+                    <span class="sr-only">Follow on GitHub</span><svg
                       viewBox="0 0 24 24"
                       aria-hidden="true"
                       class="h-6 w-6 transition fill-zinc-400 group-hover:fill-zinc-300"

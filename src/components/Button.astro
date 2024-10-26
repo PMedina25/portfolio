@@ -1,0 +1,13 @@
+---
+interface Props {
+  text: string;
+  type: "submit" | "reset" | "button";
+}
+
+const { text, type = "submit" } = Astro.props;
+---
+
+<button
+  class="w-fit rounded-md bg-accent px-6 py-3 text-sm font-bold text-white"
+  type={type}>{text}</button
+>

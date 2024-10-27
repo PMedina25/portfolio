@@ -1,6 +1,6 @@
 ---
 import { Image } from "astro:assets";
-import Button from "./Button.astro";
+import Link from "./Link.astro";
 
 interface Props {
   title: string;
@@ -35,7 +35,7 @@ const PROJECTS = [
   >
     <h2 class="text-white">{title}</h2>
 
-    <Button text="Explore more" variant="outline" />
+    <Link text="Explore more" url="/portfolio" variant="outline" />
   </div>
 
   <div class="flex flex-col md:flex-row">

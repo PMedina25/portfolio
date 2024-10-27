@@ -1,17 +1,17 @@
 ---
 interface Props {
   text: string;
+  url: string;
   variant?: "primary" | "secondary" | "outline";
-  type?: "submit" | "reset" | "button";
 }
 
-const { text, variant, type = "submit" } = Astro.props;
+const { text, url, variant } = Astro.props;
 ---
 
-<button
+<a
   class:list={[
     "h-fit w-fit rounded-md bg-accent px-6 py-3 font-semibold text-white",
     { "border border-light-gray bg-transparent": variant === "outline" },
   ]}
-  type={type}>{text}</button
+  href={url}>{text}</a
 >

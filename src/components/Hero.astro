@@ -1,5 +1,5 @@
 ---
-import Button from "./Button.astro";
+import Link from "./Link.astro";
 
 interface Props {
   title: string;
@@ -11,7 +11,7 @@ const { title, description, prefix } = Astro.props;
 ---
 
 <section
-  class="flex flex-col items-center px-4 py-8 md:flex-row-reverse md:justify-between md:py-24"
+  class="flex flex-col items-center py-8 md:flex-row-reverse md:justify-between md:py-24"
 >
   <div class="relative h-80 w-full lg:h-[558px] lg:w-1/2">
     <div
@@ -104,6 +104,6 @@ const { title, description, prefix } = Astro.props;
     <p class="text-accent">{prefix}</p>
     <h1 class="text-white">{title}</h1>
     <p class="leading-8 text-light-gray">{description}</p>
-    <Button text="See my work" />
+    <Link text="See my work" url="/portfolio" />
   </div>
 </section>

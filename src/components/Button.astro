@@ -1,13 +1,17 @@
 ---
 interface Props {
   text: string;
-  type: "submit" | "reset" | "button";
+  variant?: "primary" | "secondary" | "outline";
+  type?: "submit" | "reset" | "button";
 }
 
-const { text, type = "submit" } = Astro.props;
+const { text, variant, type = "submit" } = Astro.props;
 ---
 
 <button
-  class="w-fit rounded-md bg-accent px-6 py-3 text-sm font-bold text-white"
+  class:list={[
+    "h-fit w-fit rounded-md bg-accent px-6 py-3 font-semibold text-white",
+    { "border border-light-gray bg-transparent": variant === "outline" },
+  ]}
   type={type}>{text}</button
 >

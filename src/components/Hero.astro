@@ -10,7 +10,7 @@ interface Props {
 const { title, description, prefix } = Astro.props;
 ---
 
-<div
+<section
   class="flex flex-col items-center px-4 py-8 md:flex-row-reverse md:justify-between md:py-24"
 >
   <div class="relative h-80 w-full lg:h-[558px] lg:w-1/2">
@@ -100,10 +100,10 @@ const { title, description, prefix } = Astro.props;
     </svg>
   </div>
 
-  <div class="flex w-full flex-col gap-4 p-4 lg:w-1/2">
+  <div class="flex w-full flex-col gap-4 lg:w-1/2">
     <p class="text-accent">{prefix}</p>
     <h1 class="text-white">{title}</h1>
     <p class="leading-8 text-light-gray">{description}</p>
-    <Button text="SEE MY WORK" type="button" />
+    <Button text="See my work" />
   </div>
-</div>
+</section>
